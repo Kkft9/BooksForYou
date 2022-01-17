@@ -1,0 +1,7 @@
+.hmpg {
+    background-image: url('./../../wallpaper.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;  
+    align-items: center;    
+}

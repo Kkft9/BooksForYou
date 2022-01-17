@@ -1,0 +1,21 @@
+.background {
+    background: rgb(2,0,36);
+    background: linear-gradient(
+        347deg
+        , rgb(242 255 10) 1%, rgb(137 155 29) 6%, rgb(55 106 6) 160%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    padding: 10px;
+}
+
+.search {
+    height: 38px;
+    width: 350px;
+}
+  
+.clear-margin-top {
+    margin-top: -16px;
+}
