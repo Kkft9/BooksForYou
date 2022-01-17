@@ -1,13 +1,20 @@
 from flask import Flask, send_from_directory, request
 from pprint import pprint
 import requests
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__, static_folder='build', static_url_path='')
+cors = CORS(app)
 app.config['SECRET_KEY'] = 'secret!'
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 API_KEY='AIzaSyCYtt5rMnOAMPmr06T9fMfDtx40IDDV6eg'
 QUERY_URL = 'https://www.googleapis.com/books/v1/volumes?q=+'
 PRINT_TYPE = '&printType=books'
+
+@app.route('')
+def home():
+    return send_from_directory(app.static_folder, 'index.html')
 
 @app.route('/')
 def index():
