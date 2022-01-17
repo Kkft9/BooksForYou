@@ -94,7 +94,7 @@ export default function DetailsPage() {
                         <button className="btn btn-dark">View</button>
                     </a>
                     <a  href={responseData.saleInfo.buyLink ? responseData.saleInfo.buyLink : "#"}>
-                        <button  className="btn btn-info">Buy{responseData.saleInfo.retailPrice ? ` (Rs ${responseData.saleInfo.retailPrice.amount})`:''}</button>
+                        <button  className="btn btn-info">Buy{responseData.saleInfo.retailPrice ? ` (${responseData.saleInfo.retailPrice.currencyCode} ${responseData.saleInfo.retailPrice.amount})`:''}</button>
                     </a>
                     <p id="saved"></p>
                     </div>
